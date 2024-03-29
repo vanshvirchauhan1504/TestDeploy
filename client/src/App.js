@@ -21,7 +21,7 @@ function App() {
 
   async function getData() {
     try {
-      const response = await axios.get('https://test-deploy-psi-teal.vercel.app//test?name=Vansh');
+      const response = await axios.get('https://test-deploy-psi-teal.vercel.app/test?name=Vansh');
       setText(response.data);
     } catch (error) {
       console.error('Error posting data:', error);
