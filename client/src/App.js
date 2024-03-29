@@ -12,7 +12,7 @@ function App() {
       const postData = {
         data:"Received data from React App"
       };
-      const response = await axios.post('http://localhost:5000/', postData);
+      const response = await axios.post('https://test-deploy-psi-teal.vercel.app/', postData);
       setText(response.data);
     } catch (error) {
       console.error('Error posting data:', error);
@@ -21,7 +21,7 @@ function App() {
 
   async function getData() {
     try {
-      const response = await axios.get('http://localhost:5000/test?name=Vansh');
+      const response = await axios.get('https://test-deploy-psi-teal.vercel.app//test?name=Vansh');
       setText(response.data);
     } catch (error) {
       console.error('Error posting data:', error);
